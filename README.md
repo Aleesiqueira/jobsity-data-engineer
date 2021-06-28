@@ -12,5 +12,5 @@ The developed process runs as follows:
  - After the dimensions and fact are updated, we can consume the information in the Data Studio [report](https://datastudio.google.com/reporting/53518e1c-51d2-4c17-a09d-b5f0369bbf75).
 
 ### Google Credentials
-E-mail: jobsitydataengineer@gmail.com
-Password: challenge@2021
+ - E-mail: jobsitydataengineer@gmail.com
+ - Password: challenge@2021
