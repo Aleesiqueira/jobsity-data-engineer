@@ -10,3 +10,7 @@ The developed process runs as follows:
  - During the script execution, log events are sent through a Pub/Sub topic that triggers a Cloud Function to insert them into BigQuery.
  - With the data already in the raw.trips table, a few custom querys are executed to distribute the data into a Star-Schema data model that has dimensions and fact tables.
  - After the dimensions and fact are updated, we can consume the information in the Data Studio [report](https://datastudio.google.com/reporting/53518e1c-51d2-4c17-a09d-b5f0369bbf75).
+
+### Google Credentials
+E-mail: jobsitydataengineer@gmail.com
+Password: challenge@2021
