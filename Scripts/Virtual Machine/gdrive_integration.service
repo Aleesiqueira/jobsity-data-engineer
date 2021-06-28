@@ -1,0 +1,13 @@
+[Unit]
+Description= Integração Google Drive x BigQuery
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=30
+User=root
+ExecStart=/usr/bin/env python3 /home/alexsander_rodrigues_siqueira/script.py > /home/alexsander_rodrigues_siqueira/output.log
+
+[Install]
+WantedBy=multi-user.target
