@@ -17,3 +17,4 @@ The developed process runs as follows:
 
 ### Considerations
 - Container: As the main engine of this ingestion process is a python script that runs in a Compute Engine instance, we could containerize it to run in a Kubernetes environment, which could also be in GCP, ingesting data into BigQuery. 
+- Cloud Architecture: Considering this automatic ingestion from a Google Drive folder, I would loose the always-running service that monitor the Drive folder and use the [watch](https://developers.google.com/drive/api/v3/reference/files/watch) method of the Google Drive API to send messages to a Cloud Function endpoint and trigger my ingestion only when a file is created in this directory, which would save costs against keeping a VM or container running all-day.
