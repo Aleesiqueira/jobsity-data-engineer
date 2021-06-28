@@ -14,3 +14,6 @@ The developed process runs as follows:
 ### Google Credentials
  - E-mail: jobsitydataengineer@gmail.com
  - Password: challenge@2021
+
+### Considerations
+- Container: As the main engine of this ingestion process is a python script that runs in a Compute Engine instance, we could containerize it to run in a Kubernetes environment, which could also be in GCP, ingesting data into BigQuery. 
